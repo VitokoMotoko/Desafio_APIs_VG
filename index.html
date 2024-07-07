@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio APIs VG</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+</head>
+<body style="background-color: black;">
+    
+    <div class="container">
+        <h1 class="text-center text-white">Conversor de monedas Nacional</h1>
+        <hr style="border-top: 1px solid blue;">
+        <div class="card mt-5 bg-secondary mx-auto" style="max-width: 500px;">
+            <div class="card-body text-center">
+                <h1 class="card-title">Pesos CLP</h1>
+                <input id="amount" class="form-control" type="number" placeholder="Ingrese el monto en CLP">
+                <select id="currency" class="form-control mt-3">
+                    <option value="dolar">Dolar</option>
+                    <option value="uf">UF</option>
+                    <option value="euro">Euro</option>
+                    <option value="ipc">IPC</option>
+                    <option value="utm">UTM</option>
+                    <option value="imacec">Imacec</option>
+                    <!-- Aqui puedo agregar mas opciones pero para el desafio se pedian solo 2 -->
+                </select>
+                <button id="convert" class="btn btn-primary mt-3">Buscar</button>
+                <h2 class="mt-3"><span id="result">...</span></h2>
+                <div id="chart"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="chartContainer" style="display: none;">
+            <canvas id="myChart" class="mx-auto d-block"></canvas>
+        </div>
+    </div>
+
+
+    <script src="assets/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#myChart {
+    background-color: white;
+    max-width: 800px;
+    height: 400px;
+}
+
